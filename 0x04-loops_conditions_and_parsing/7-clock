@@ -4,7 +4,7 @@
 
 h=0
 m=1
-while [[ $h -le 11 ]]
+while [[ $h -le 12 ]]
 do
 	printf "Hour: %d\n" $h
 	while [[ $m -le 59 ]]
