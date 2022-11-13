@@ -10,7 +10,7 @@ do
 		4)
 			printf "bad luck from China\n"
 			;;
-		8)
+		9)
 			printf "bad luck from Japan\n"
 			;;
 		17)
