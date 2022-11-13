@@ -2,10 +2,7 @@
 # This script is displaying "Best School" 10 times
 
 
-i=0
-
-while [ $i -lt 10 ]
+for i in {1..10}
 do
 	printf "Best School\n"
-	i=$[$i+1]
 done
