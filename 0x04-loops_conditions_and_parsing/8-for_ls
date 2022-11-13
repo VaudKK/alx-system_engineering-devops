@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# This script is displaying "Best School" 10 times
+
+
+LIST="$(find . -type f | cut -d "-" -f 2)"
+
+for item in $LIST
+do
+	printf "%s\n" "$item"
+done
