@@ -6,15 +6,16 @@ i=1
 while [[ "$i" -le 20 ]]
 do
 	printf "%d\n" $i
-	if [[ "$i" -eq 4 ]]
-	then
-		printf "bad luck from China\n"
-	elif [[ "$i" -eq 8 ]]
-	then
-		printf "bad luck from Japan\n"
-	elif [[ "$i" -eq 17 ]]
-	then
-		printf "bad luck from Italy\n"
-	fi
+	case $i in
+		4)
+			printf "bad luck from China\n"
+			;;
+		8)
+			printf "bad luck from Japan\n"
+			;;
+		17)
+			printf "bad luck from Italy\n"
+			;;
+	esac
 	i=$(( i+1 ))
 done
