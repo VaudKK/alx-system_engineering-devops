@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# This script is dope
+
+
+for (( i=1; i<101; i++ ))
+do
+	if [[ $(( i % 3 )) -eq 0 && $(( i % 5 )) -eq 0 ]]
+	then
+		printf "FizzBuzz\n"
+	elif [[ $(( i % 3 )) -eq 0 ]]
+	then
+		printf "Fizz\n"
+	elif [[ $(( i % 5 )) -eq 0 ]]
+	then
+		printf "Buzz\n"
+	else
+		printf "%d\n" $i
+	fi
+done
+
