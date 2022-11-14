@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# This script is dope
+
+oldIFS="$IFS"
+FILE="/etc/passwd"
+
+while IFS=: read -r f1 _ f3 _ _ f6 _
+do
+	printf "%s:%s:%s\n" "$f1" "$f3" "$f6"
+done < $FILE
+
+IFS="$oldIFS"
