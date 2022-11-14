@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+# This script is working on files
+
+
+FILE="school"
+
+if [[ -e "$FILE" ]]
+then
+	printf "school file exists\n"
+else
+	printf "school file does not exist\n"
+	exit
+fi
+
+if [[ -s "$FILE" ]]
+then
+	printf "school file is not empty\n"
+else
+	printf "school file is empty\n"
+fi
+
+
+if [[ ! -d "$FILE" ]]
+then
+	printf "school is a regular file\n"
+fi
