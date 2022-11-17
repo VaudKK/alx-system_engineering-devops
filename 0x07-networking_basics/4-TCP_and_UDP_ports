@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# network is dope
+
+netstat -p
